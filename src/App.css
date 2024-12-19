@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  width:100rem;
+  height: 7rem;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:45rem;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: right;
+  
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: larger;
+  justify-content: right;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #1e90ff;
+}
+
+/* Underline Animation */
+.navbar ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1e90ff;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+/* For Images*/
+
+.image {
+  background-image: url('path-to-your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4; /* Fallback color */
+}
